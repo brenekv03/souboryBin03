@@ -25,9 +25,9 @@ namespace souboryBin03
             BinaryWriter bw = new BinaryWriter(fs);
             int max = br.ReadInt32();
             int min = br.ReadInt32();
-            int maxPosition = 0;
             while(fs.Position<fs.Length)
             {
+
                 int cislo = br.ReadInt32();
                 listBox1.Items.Add(cislo);
                 if(cislo<min)
